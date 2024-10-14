@@ -1,0 +1,15 @@
+Modellizzare la struttura di una tabella per memorizzare tutti i dati 
+riguardanti delle auto usate messe in vendita da un concessionario
+
+
+id (INTEGER, PRIMARY KEY, AUTO_INCREMENT) - Identificatore univoco per ogni auto. 
+marca (VARCHAR(50), NOT NULL) - Marca dell'auto. 
+modello (VARCHAR(50), NOT NULL) - Modello dell'auto. 
+anno (YEAR, NOT NULL) - Anno di fabbricazione dell'auto. 
+chilometraggio (INTEGER, NOT NULL) - Chilometraggio dell'auto in chilometri.
+prezzo (DECIMAL(10,2), NOT NULL) - Prezzo dell'auto. 
+carburante (ENUM, NOT NULL) - Tipo di carburante dell'auto.('Benzina', 'Diesel', 'Ibrido', 'Elettrico')
+trasmissione (ENUM, NOT NULL) - Tipo di trasmissione dell'auto. ('Manuale', 'Automatico')
+colore (VARCHAR(30), NULL) - Colore dell'auto. 
+descrizione (LONGTEXT, NULL) - Descrizione opzionale dell'auto.
+data_inserzione (DATETIME, DEFAULT CURRENT_TIMESTAMP) - Data e ora in cui l'auto è stata inserita nel database. 
